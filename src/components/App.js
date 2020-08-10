@@ -6,6 +6,8 @@ import youtube from "../apis/youtube";
 const KEY = "AIzaSyBk2kyM3EC5cwfnno28nHrDsFdh5rAorDg";
 
 class App extends React.Component {
+   state = { videos: [] };
+
    onTermSubmit = async (term) => {
       const response = await youtube.get("/search", {
          params: {
@@ -16,13 +18,15 @@ class App extends React.Component {
             key: KEY,
          },
       });
-      console.log(response);
+      // console.log(response);
+      this.setState({ videos: response.data.items });
    };
 
    render() {
       return (
          <div className="ui container">
             <SearchBar onFormSubmit={this.onTermSubmit} />
+            <h3>I have {this.state.videos.length} videos</h3>
          </div>
       );
    }
