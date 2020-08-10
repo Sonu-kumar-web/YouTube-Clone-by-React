@@ -5,7 +5,7 @@ import youtube from "../apis/youtube";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
 
-// API key (Add two credentials for quota purpose)
+// API key (Add two credentials for quota purpose).YouTube Data API have a default quota allocation of 10,000 units per day
 // const KEY = "AIzaSyBk2kyM3EC5cwfnno28nHrDsFdh5rAorDg";
 const KEY = "AIzaSyBjJRJz35WufQbTYfid1emq0qWwUo43AFI";
 
