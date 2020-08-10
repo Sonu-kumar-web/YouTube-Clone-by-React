@@ -1,8 +1,6 @@
-# Codeial
-<b>Codeial</b> is a Scoial web app. In this <b>Codeial web app </b> i have created chat engine with the help of socket, where more than two friends can chat.<br>
-**Technologies Used:** HTML, CSS, JavaScript, Node.js, APIs, Express.js, Mongodb and many libraries for make it secure.<br>
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Youtube Clone
+<b>Youtube Clone</b> web app is just like youtube app where you can search videos. <b>Youtube Clone web app </b> is created with the help youtube public API.<br>
+**Technologies Used:** React.js, Axios, Youtube public Api<br>
 
 ## Available Scripts
 
