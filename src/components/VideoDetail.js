@@ -6,6 +6,7 @@ const VideoDetail = ({ video }) => {
       return <div>Loading...</div>;
    }
 
+   // Src for iframe tag
    const videoSrc = `https://www.youtube.com/embed/${video.id.videoId} `;
 
    return (

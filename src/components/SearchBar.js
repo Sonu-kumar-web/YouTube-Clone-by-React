@@ -15,17 +15,26 @@ class SearchBar extends React.Component {
 
    render() {
       return (
-         <div className="ui segment search-bar">
+         <div
+            className="ui segment search-bar"
+            style={{ backgroundColor: "#f2f2f2" }}
+         >
             <form className="ui form" onSubmit={this.onFormSubmit}>
                <div className="field">
-                  <label>Video Search</label>
-                  <input
-                     type="text"
-                     value={this.state.term}
-                     onChange={this.onInputChange}
-                     placeholder="Enter the name of video"
-                     required
-                  />
+                  <div style={styles}>
+                     <label>
+                        <h4>Video Search</h4>
+                     </label>
+                  </div>
+                  <div style={{ marginTop: 5 }}>
+                     <input
+                        type="text"
+                        value={this.state.term}
+                        onChange={this.onInputChange}
+                        placeholder="Search"
+                        required
+                     />
+                  </div>
                </div>
             </form>
          </div>
@@ -34,3 +43,11 @@ class SearchBar extends React.Component {
 }
 
 export default SearchBar;
+
+const styles = {
+   backgroundColor: "skyBlue",
+   width: 98,
+   height: 25,
+   padding: 3,
+   borderRadius: 8,
+};
